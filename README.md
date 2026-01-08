@@ -1,1 +1,140 @@
-# taxidracula
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Drácula - Puerto Cabello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #e61e25; 
+            --accent: #fbc02d;  
+            --bg: #121212;
+            --card-bg: #1e1e1e;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--accent); margin-bottom: 5px; font-size: 2.2rem; }
+        .tagline { color: #bbb; font-style: italic; }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.2s;
+        }
+
+        .btn:active { transform: scale(0.95); }
+
+        .btn-whatsapp { background-color: #25d366; color: white; }
+        .btn-instagram { background-color: #e1306c; color: white; }
+        .btn-call { background-color: var(--accent); color: #000; }
+
+        .info-section {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: left;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .info-section h2 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        ul { padding-left: 20px; margin: 0; }
+        li { margin-bottom: 10px; color: #ddd; }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 20px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>🚕 Taxi Drácula</h1>
+            <p class="tagline">Seguridad y profesionalismo en Puerto Cabello</p>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://wa.me/584123480093" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+            <a href="tel:04123480093" class="btn btn-call">
+                <i class="fas fa-phone"></i> Llamar Ahora
+            </a>
+            <a href="https://instagram.com/taxidracula" class="btn btn-instagram">
+                <i class="fab fa-instagram"></i> Ver Instagram
+            </a>
+        </div>
+
+        <div class="info-section">
+            <h2>📍 Ubicación</h2>
+            <p>Punto fijo en el <strong>Malecón de Puerto Cabello</strong>, frente al Teatro Municipal.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>⭐ Ventajas</h2>
+            <ul>
+                <li><strong>Seguridad:</strong> Tranquilidad total al finalizar tu paseo.</li>
+                <li><strong>Disponibilidad:</strong> Especialistas en noches y fines de semana.</li>
+                <li><strong>Expertos:</strong> Conocemos la ciudad y te recomendamos los mejores sitios.</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>💡 Ideal para Turistas</h2>
+            <p>Si visitas el Teatro Municipal, la Plaza Bolívar o los restaurantes del malecón, somos tu transporte de confianza.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Presidente:</strong> Carlos Besio</p>
+            <p>Puerto Cabello, Venezuela © 2026</p>
+        </div>
+    </div>
+
+</body>
+</html>
